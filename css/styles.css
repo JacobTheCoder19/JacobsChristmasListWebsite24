@@ -16,6 +16,9 @@ body {
     animation: alternateBackground 5s infinite;
     color:#fff;
 }
+#makeBlack { 
+    color:#000;
+}
 @keyframes alternateBackground { 
     0% { 
         background-color: green;
