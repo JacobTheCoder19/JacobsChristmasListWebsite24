@@ -1,0 +1,136 @@
+/* File Name: styles.css
+   Created on: 11.27.2024
+   Developed by: Jacob Graham
+   Last Updated: 11.27.2024 */
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+    height: 100%; /* Ensure html and body take up the full height of the viewport */
+}
+
+/* Media Query for Mobile Viewport */
+@media screen and (max-width: 629px) {
+    /* Your mobile-specific styles go here */
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+    .mobile-nav {
+        display: none;
+    }
+   
+    body{
+        background-color:#b6b9b7;
+    }
+
+    header {
+        height: 25%; 
+        width: 100%; 
+    }
+
+    #headerBackgroundImg {
+        height: 20em; 
+        width: 100%; 
+    }
+
+    #headerLogo {
+        height: 20em;
+        width: 30em;
+        display: block;
+        margin: 0 auto;
+        transform: translateY(-23em); /* Move the logo up by 10em */
+    }
+
+    /* Navigation Style rules */
+    nav {
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+        transform: translateY(4em);
+    }
+   
+    nav li {
+        font-size: 1.5em;
+        font-family: 'Francois One', sans-serif;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    nav li a {
+        padding: 0.1em 0.75em;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+
+    #contact {
+        text-align: center;
+    }
+    
+    #contact .contact-email-link {
+        color: #ff2c0c;
+        text-decoration: none;
+    }
+    
+    #contact {
+        transform: translateY(8em);
+    }
+    
+    #calender{
+        height:30em;
+        width: 40em;
+    }
+
+    footer p a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    footer {
+        background-color: #01450f; /* Black background */
+        color: #fff; /* White text color */
+        padding: 2em 0; /* Adjust padding as needed */
+        text-align: center; /* Center-align text */
+        transform:translateY(15em);
+    }
+
+    footer .copyright {
+        font-size: 0.75em;
+        padding: 10px 0; /* Adjust padding as needed */
+    }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+    /* Your large desktop-specific styles go here */
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
