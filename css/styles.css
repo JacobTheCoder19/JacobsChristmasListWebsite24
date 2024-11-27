@@ -33,9 +33,12 @@ body {
 /*
 Christmas list styles begin*/
 
-#ChristmasListColor { 
-    background-color: rgb(11, 225, 11);
+/* Solid green background for the list page */
+body.list-page {
+    background-color: green; /* Solid green background */
+    animation: none; /* Disable animation */
 }
+
 .tree-container {
     margin: 1rem 0;
 }
