@@ -29,9 +29,6 @@ body {
 #afterSanta-font { 
     font-family: Georgia, serif;
     font-size: 1.25rem;
-    color: darkslategray;
-    line-height: 1.6;
-    margin: 0 2rem;
 }
 
 @keyframes alternateBackground { 
