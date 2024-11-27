@@ -52,3 +52,20 @@ function hamburger() {
         logo.style.display = "none";
     }
 }
+
+/* Christmas list scripts begin */
+
+function showGift(giftId) {
+    // Hide all gift displays
+    const allGifts = document.querySelectorAll('.gift-display');
+    allGifts.forEach(gift => gift.style.display = 'none');
+
+    // Show the selected gift
+    const selectedGift = document.getElementById(giftId);
+    if (selectedGift) {
+        selectedGift.style.display = 'block';
+    }
+}
+
+
+/* Christmas list scripts end */

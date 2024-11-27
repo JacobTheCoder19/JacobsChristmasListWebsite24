@@ -30,6 +30,55 @@ body {
     font-family: Georgia, serif;
     font-size: 1.25rem;
 }
+/*
+Christmas list styles begin*/
+
+
+.tree-container {
+    margin: 1rem 0;
+}
+
+.tree-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.presents-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.present img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.present img:hover {
+    transform: scale(1.1);
+}
+
+.gift-display {
+    display: none;
+    margin-top: 1rem;
+}
+
+.gift-display img {
+    max-width: 80%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.gift-display a {
+    text-decoration: none;
+}
+
+/*Christmas list styles end*/
 
 @keyframes alternateBackground { 
     0% { 
