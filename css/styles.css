@@ -41,7 +41,7 @@ img, video {
 /* Style rule for header */
 header {
     top: 0;
-    background-color: #000;
+    animation: alternateBackground 5s infinite;
     height: 20%;
 }
 
@@ -80,7 +80,7 @@ header img {
 
 /* Style rules for main content */
 main {
-    background-color: #fff;
+    animation: alternateBackground 5s infinite;
     padding: 2%;
     font-size: 1.15em;
     font-family: 'Roboto Slab', serif;
