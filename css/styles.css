@@ -19,6 +19,13 @@ body {
 #makeBlack { 
     color:#000;
 }
+
+#santa-font {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem;
+    color: white;
+}
+
 @keyframes alternateBackground { 
     0% { 
         background-color: green;
