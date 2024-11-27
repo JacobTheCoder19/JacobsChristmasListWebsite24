@@ -34,7 +34,7 @@ body {
 Christmas list styles begin*/
 
 /* Solid green background for the list page */
-body.list-page {
+.list-page {
     background-color: green; /* Solid green background */
     animation: none; /* Disable animation */
 }
