@@ -13,7 +13,7 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 /* Style rules for body and images */
 body {
 	/*background-color: #046a1d;*/
-    animation: alternateBackground 2s infinite;
+    animation: alternateBackground 5s infinite;
 }
 @keyframes alternateBackground { 
     0% { 
@@ -42,7 +42,7 @@ img, video {
 header {
     top: 0;
     background-color: #000;
-    height: 190px;
+    height: 20%;
 }
 
 header img {
