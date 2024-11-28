@@ -22,9 +22,16 @@
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
     </head>
-    
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('background-music');
+            audio.play().catch(error => {
+                console.log('Autoplay blocked:', error);
+            });
+        });
+    </script>    
     <body>
-        <audio autoplay loop>
+        <audio id="background-music" autoplay loop>
             <source src="media/TheChristmasSong2.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
