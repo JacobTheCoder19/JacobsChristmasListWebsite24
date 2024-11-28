@@ -55,7 +55,22 @@ function hamburger() {
 
 /* Christmas list scripts begin */
 
+// Flag to track whether the user has clicked a gift before
+let hasClickedOnce = localStorage.getItem('hasClickedOnce') || false;
+
+// Function to handle the first-time click event on a present
 function showGift(giftId) {
+    // Play the song only the first time the user clicks a present
+    if (!hasClickedOnce) {
+        let christmasSong = document.getElementById('christmasSong');
+        christmasSong.play();
+        christmasSong.loop = true; // Enable looping after first click
+
+        // Mark that the user has clicked once
+        hasClickedOnce = true;
+        localStorage.setItem('hasClickedOnce', 'true');
+    }
+
     // Hide all gift displays
     const allGifts = document.querySelectorAll('.gift-display');
     allGifts.forEach(gift => gift.style.display = 'none');
@@ -66,7 +81,6 @@ function showGift(giftId) {
         selectedGift.style.display = 'block';
     }
 }
-
 
 /* Christmas list scripts end */
 
