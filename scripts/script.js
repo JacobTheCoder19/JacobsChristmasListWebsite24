@@ -55,8 +55,8 @@ function hamburger() {
 
 /* Christmas list scripts begin */
 
-// Flag to track whether the user has clicked a gift before
-let hasClickedOnce = localStorage.getItem('hasClickedOnce') || false;
+// Flag to track whether the user has clicked a gift in the current session
+let hasClickedOnce = sessionStorage.getItem('hasClickedOnce') || false;
 
 // Function to handle the first-time click event on a present
 function showGift(giftId) {
@@ -64,11 +64,11 @@ function showGift(giftId) {
     if (!hasClickedOnce) {
         let christmasSong = document.getElementById('christmasSong');
         christmasSong.play();
-        christmasSong.loop = true; // Enable looping after first click
+        christmasSong.loop = true; // Enable looping after the first click
 
-        // Mark that the user has clicked once
+        // Mark that the user has clicked once in this session
         hasClickedOnce = true;
-        localStorage.setItem('hasClickedOnce', 'true');
+        sessionStorage.setItem('hasClickedOnce', 'true');
     }
 
     // Hide all gift displays
