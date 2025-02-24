@@ -25,7 +25,7 @@
 </div>
 
 <h2><em>✨ Purpose / Inspiration ✨</em></h2>
-&emsp;This project's inspiration came from me thinking it would be funny to have a website all just for what I wanted for christmas. This website was intended just for my family which is why I didn't bother to make the desktop and tablet viewports since they were never going to open the website on those devices. This project was also a very fun learning experience on how to make music play on the website as well as the flashing red and green background.
+&emsp;This project's inspiration came from me thinking it would be funny to have a website all just for what I wanted for Christmas. This website was intended just for my family which is why I didn't bother to make the desktop and tablet viewports since they were never going to open the website on those devices. This project was also a very fun learning experience on how to make music play on the website as well as the flashing red and green background.
 
 <h2><em>⚙️ How It Works ⚙️</em></h2>
 &emsp;The Christmas list website is built using HTML, CSS, and JavaScript. The layout is designed to be mobile-friendly, ensuring that users can easily navigate and interact with the content on their smartphones.
