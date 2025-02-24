@@ -17,7 +17,8 @@ function hamburger() {
     }
 }
 
-/* Christmas list scripts begin */
+
+/*Christmas list section*/
 
 // Flag to track whether the user has clicked a gift in the current session
 let hasClickedOnce = sessionStorage.getItem('hasClickedOnce') || false;
@@ -45,10 +46,3 @@ function showGift(giftId) {
         selectedGift.style.display = 'block';
     }
 }
-
-/* Christmas list scripts end */
-
-/**
- * music script
- * 
- */
